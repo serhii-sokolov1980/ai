@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог ИИ-инструментов</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1><i class="fas fa-robot"></i> Каталог ИИ-инструментов</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="add-ai.html">Добавить ИИ</a>
+            <a href="#" id="favoritesLink">Избранное (<span id="favoritesCount">0</span>)</a>
+        </nav>
+        <div class="controls">
+            <input type="search" id="searchInput" placeholder="Поиск по названию или описанию...">
+            <button id="themeToggle"><i class="fas fa-moon"></i></button>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div class="category-tabs" id="categoryTabs">
+        <div class="category-tab active" data-category="all">Все</div>
+        <div class="category-tab category-text" data-category="text">Текст</div>
+        <div class="category-tab category-image" data-category="image">Изображения</div>
+        <div class="category-tab category-audio" data-category="audio">Аудио</div>
+        <div class="category-tab category-video" data-category="video">Видео</div>
+        <div class="category-tab category-code" data-category="code">Программирование</div>
+        <div class="category-tab category-business" data-category="business">Бизнес</div>
+        <div class="category-tab category-3d" data-category="3d">3D</div>
+        <div class="category-tab category-gaming" data-category="gaming">Игры</div>
+        <div class="category-tab category-education" data-category="education">Образование</div>
+    </div>
+
+    <div class="ai-grid" id="aiGrid">
+        <div class="loading">
+            <div class="spinner"></div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2023 Каталог ИИ-инструментов. Все права защищены.</p>
+        <p>Хотите добавить свой ИИ? <a href="add-ai.html">Заполните форму</a></p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

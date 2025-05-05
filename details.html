@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали ИИ-инструмента</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1><i class="fas fa-robot"></i> Детали ИИ-инструмента</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="add-ai.html">Добавить ИИ</a>
+            <a href="#" id="favoritesLink">Избранное (<span id="favoritesCount">0</span>)</a>
+        </nav>
+        <div class="controls">
+            <button id="themeToggle"><i class="fas fa-moon"></i></button>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div id="aiDetails" class="ai-details">
+        <!-- Данные будут загружены через JavaScript -->
+    </div>
+
+    <div class="reviews-section">
+        <h2>Отзывы и рейтинги</h2>
+        <div class="reviews-container" id="reviewsContainer">
+            <!-- Отзывы будут загружены здесь -->
+        </div>
+        <div class="add-review">
+            <h3>Добавить отзыв</h3>
+            <form id="reviewForm">
+                <div class="rating-input">
+                    <label>Рейтинг:</label>
+                    <div class="stars">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                </div>
+                <input type="hidden" id="ratingValue" value="0">
+                <textarea id="reviewText" placeholder="Ваш отзыв..." required></textarea>
+                <button type="submit">Отправить отзыв</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2023 Каталог ИИ-инструментов. Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="details.js"></script>
+</body>
+</html>
